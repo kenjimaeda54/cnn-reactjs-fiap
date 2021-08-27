@@ -1,3 +1,19 @@
+# Page CNN 
+
+Pagina do CNN, Fiap
+
+
+## Desafio
+- Construir um layout responsivo para simular pagina do CNN, buscando boas práticas, composição e interação.
+
+
+## O que aprendi
+- Foi útil para reforçar conceito software em ‘desktop’.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
