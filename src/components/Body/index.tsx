@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { FormattedDate } from '../../date/formattedDate';
 import { FormattedHour } from '../../date/formattedHour';
 import Logo from '../../assets/logo.svg';
@@ -17,22 +17,13 @@ import {
 } from './styles';
 
 export function Body(): JSX.Element {
-  const [hours, setHours] = useState('');
-
-  useEffect(() => {
-    setHours(FormattedHour());
-    setInterval(function () {
-      setHours(FormattedHour());
-    }, 60000);
-  }, [hours]);
-
   return (
     <Container>
       <ContainerDate>
         <Date>
-          {FormattedDate()} as {hours}
+          {FormattedDate()} as {FormattedHour()}
         </Date>
-        <TextDate>| Atualizado em {hours}</TextDate>
+        <TextDate>| Atualizado em {FormattedHour()}</TextDate>
       </ContainerDate>
       <ContainerIgm>
         <BodyImg>
