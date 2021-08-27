@@ -7,6 +7,6 @@ export function FormattedHour(): string {
   const minutes =
     formattedHour.getMinutes() > 9
       ? formattedHour.getMinutes()
-      : `0${formattedHour.getMinutes}`;
+      : `0${formattedHour.getMinutes()}`;
   return `${hour}:${minutes}`;
 }

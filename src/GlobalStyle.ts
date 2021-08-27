@@ -12,7 +12,15 @@ export default createGlobalStyle`
   
   html,body, #root{
       height: 100%;
-      overflow: hidden
+      overflow-x: hidden;
+      ::-webkit-scrollbar-width{
+           width: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+          background: ${({ theme }) => theme.colors.gray}; 
+          border-radius: 10px;
+      }
+ 
   } 
    
   *,button,input{
