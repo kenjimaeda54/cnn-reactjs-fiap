@@ -7,6 +7,34 @@ export const Container = styled.div`
   height: 100%;
 `;
 
+export const ContainerMenu = styled.div`
+  display: none;
+  @media (max-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 50px;
+  }
+`;
+
+export const ImgBody = styled.img`
+  display: none;
+  @media (max-width: 602px) {
+    display: block;
+    height: 120px;
+    width: 120px;
+    margin-right: 30px;
+  }
+`;
+
+export const ButtonModal = styled.button`
+  cursor: pointer;
+  background-color: transparent;
+  padding: 5px;
+`;
+
 export const ContainerNavigation = styled.header`
   display: flex;
   flex-direction: row;
@@ -16,6 +44,9 @@ export const ContainerNavigation = styled.header`
   margin-top: 10px;
   margin-bottom: 30px;
   background-color: ${({ theme }) => theme.colors.black};
+  @media (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 export const BodyContainer = styled.section`
@@ -31,6 +62,22 @@ export const Title = styled.p`
   font-size: 25px;
   line-height: 27px;
   color: ${({ theme }) => theme.colors.black};
+  @media (max-width: 600px) {
+    font-size: 15px;
+    line-height: 19px;
+  }
+`;
+
+export const ContainerModal = styled.div`
+  @media (max-width: 620px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+  }
 `;
 
 export const WrapsSubtitle = styled.div`
@@ -46,6 +93,10 @@ export const SubTitle = styled.p`
   line-height: 21px;
   color: ${({ theme }) => theme.colors.primary};
   font-weight: 400;
+  @media (max-width: 600px) {
+    font-size: 13px;
+    line-height: 18px;
+  }
 `;
 
 export const ImgAuthor = styled.img`

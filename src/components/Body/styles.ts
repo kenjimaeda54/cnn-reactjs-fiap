@@ -12,9 +12,18 @@ export const ContainerDate = styled.div`
   align-items: center;
 `;
 
-export const Date = styled.p``;
+export const Date = styled.p`
+  font-size: 15px;
+  line-height: 19px;
+  color: ${({ theme }) => theme.colors.primary};
+  font-weight: 300;
+  @media (max-width: 600px) {
+    font-size: 12px;
+    line-height: 13px;
+  }
+`;
 
-export const TextDate = styled.p``;
+export const TextDate = styled(Date)``;
 
 export const ContainerIgm = styled.div`
   width: 100%;
@@ -34,6 +43,9 @@ export const ImgBody = styled.img`
   height: 120px;
   width: 120px;
   margin-right: 30px;
+  @media (max-width: 602px) {
+    display: none;
+  }
 `;
 
 export const ContainerSection = styled.article`
@@ -42,12 +54,25 @@ export const ContainerSection = styled.article`
   padding-top: 4px;
   padding-left: 70px;
   padding-right: 120px;
+  @media (max-width: 602px) {
+    padding: 10px;
+  }
 `;
 
 export const TextTop = styled.p`
   font-size: 17px;
   line-height: 25px;
   text-align: justify;
+  color: ${({ theme }) => theme.colors.primary};
+  font-weight: 300;
+  @media (max-width: 600px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  @media (max-width: 600px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
 `;
 
 export const TextFooter = styled(TextTop)`

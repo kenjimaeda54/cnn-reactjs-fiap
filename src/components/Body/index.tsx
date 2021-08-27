@@ -32,7 +32,7 @@ export function Body(): JSX.Element {
         <Date>
           {FormattedDate()} as {hours}
         </Date>
-        | <TextDate>Atualizado em {hours}</TextDate>
+        <TextDate>| Atualizado em {hours}</TextDate>
       </ContainerDate>
       <ContainerIgm>
         <BodyImg>

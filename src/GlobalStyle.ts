@@ -25,6 +25,7 @@ export default createGlobalStyle`
    
   *,button,input{
        border: none;
+       background-color: "transparent";
                
   }  
 `;
